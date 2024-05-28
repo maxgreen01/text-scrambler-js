@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Scrambler</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div class="header" style="text-align: center; margin: 3%;">
+            <h1 id=title style="margin-bottom: 1cm;">Text Scrambler</h1>
+            <h3>All the letters in each word will be scrambled except the word's first and last letters!</h2>
+            <h4>Note: Special characters (including non-English characters and punctuation) will not be scrambled, and words separated by a hyphen will be scrambled separately.</h3>
+        </div>
+
+        <div class="program" style="margin: 5%;">
+            <h1>Unscrambled Text</h2>
+            <textarea type="text" id="input" placeholder="Write your text here"></textarea>
+            <button id="submit-btn" onclick="runProgram()">Convert to scrambled text</button>
+            
+            <h1>Scrambled Text</h2>
+            <textarea type="text" id="output" disabled></textarea>
+        </div>
+        
+        <p id="credit">Created by Max Green</p>
+    </body>
+</html>
